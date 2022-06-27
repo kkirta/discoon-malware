@@ -1,0 +1,17 @@
+[package]
+name = "encrypt-macro"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+base64 = "0.13.0"
+quote = "1.0.20"
+syn = "1.0.98"
+proc-macro2 = "1.0.40"
+cbc = { version = "0.1.2", features = [ "alloc" ] }
+aes = "0.8.1"
+
+[lib]
+proc-macro = true
